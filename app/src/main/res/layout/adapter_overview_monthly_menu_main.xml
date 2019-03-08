@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainMenuMonthlyOverviewAdapter"
+    android:id="@+id/main_menu_monthly_overview_layout"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.monowealth.monowealth.RegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_menu_monthly_overview_month"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.monowealth.monowealth.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_menu_monthly_overview_income"
+        android:background="@color/charcoal"
+        android:textColor="@color/flora"
+        android:gravity="center"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_monthly_overview_month"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_menu_monthly_overview_expenses"/>
+
+    <com.monowealth.monowealth.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_menu_monthly_overview_expenses"
+        android:background="@color/charcoal"
+        android:textColor="@color/salmon"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_monthly_overview_month"
+        app:layout_constraintStart_toEndOf="@id/main_menu_monthly_overview_income"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.monowealth.monowealth.RegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_menu_monthly_overview_budget"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_monthly_overview_income"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.monowealth.monowealth.RegularTextView
+        android:id="@+id/main_menu_monthly_overview_no_expenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/no_expense"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_monthly_overview_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/main_menu_monthly_overview_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_monthly_overview_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

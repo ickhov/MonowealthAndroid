@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    tools:context=".BudgetCreatorDialogFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.monowealth.monowealth.MediumTextView
+        android:id="@+id/fragment_budget_creator_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.28"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/new_budget"
+        android:background="@color/white"/>
+
+    <com.monowealth.monowealth.MediumEditText
+        android:id="@+id/fragment_budget_creator_dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@color/charcoal"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:hint="@string/budget_name"/>
+
+    <com.monowealth.monowealth.MediumEditText
+        android:id="@+id/fragment_budget_creator_dialog_max_amount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@color/charcoal"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:hint="@string/max_amount"/>
+
+    <com.monowealth.monowealth.RegularButton
+        android:id="@+id/fragment_budget_creator_dialog_add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+</LinearLayout>

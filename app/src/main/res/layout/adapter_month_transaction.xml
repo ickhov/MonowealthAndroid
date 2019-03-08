@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1.0"
+    tools:context=".MonthTransactionAdapter"
+    android:id="@+id/adapter_month_transaction_layout"
+    android:clickable="true"
+    android:focusable="true">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.03" />
+
+    <com.monowealth.monowealth.RegularTextView
+        android:id="@+id/adapter_month_transaction_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.27"
+        android:textColor="@color/white"
+        android:gravity="start|center"
+        android:background="@color/transparent"/>
+
+    <com.monowealth.monowealth.RegularTextView
+        android:id="@+id/adapter_month_transaction_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.45"
+        android:textColor="@color/white"
+        android:gravity="start|center"
+        android:background="@color/transparent"/>
+
+    <com.monowealth.monowealth.RegularTextView
+        android:id="@+id/adapter_month_transaction_amount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.22"
+        android:textColor="@color/white"
+        android:gravity="start|center"
+        android:background="@color/transparent"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.03" />
+</LinearLayout>

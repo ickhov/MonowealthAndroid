@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="modified_black">#70000000</color>
+    <color name="charcoal">#36454f</color>
+    <color name="modified_charcoal">#7036454f</color>
+    <color name="transparent">#00000000</color>
+    <color name="tungsten">#424242</color>
+
+    <color name="salmon">#ff7e79</color>
+    <color name="modified_salmon">#70ff7e79</color>
+    <color name="cantaloupe">#ffd479</color>
+    <color name="modified_cantaloupe">#70ffd479</color>
+    <color name="banana">#fffc79</color>
+    <color name="honeydew">#d4fb79</color>
+    <color name="flora">#73fa79</color>
+    <color name="modified_flora">#7073fa79</color>
+    <color name="spindrift">#73fcd6</color>
+    <color name="modified_spindrift">#7073fcd6</color>
+    <color name="ice">#73fdff</color>
+    <color name="sky">#76d6ff</color>
+    <color name="modified_sky">#7076d6ff</color>
+    <color name="orchid">#7a81ff</color>
+    <color name="modified_orchid">#707a81ff</color>
+    <color name="lavender">#d783ff</color>
+    <color name="bubblegum">#ff85ff</color>
+    <color name="modified_bubblegum">#70ff85ff</color>
+    <color name="carnation">#ff8ad8</color>
+
+    <integer-array name="colors">
+        <item>@color/salmon</item>
+        <item>@color/cantaloupe</item>
+        <item>@color/banana</item>
+        <item>@color/honeydew</item>
+        <item>@color/flora</item>
+        <item>@color/spindrift</item>
+        <item>@color/ice</item>
+        <item>@color/sky</item>
+        <item>@color/orchid</item>
+        <item>@color/lavender</item>
+        <item>@color/bubblegum</item>
+        <item>@color/carnation</item>
+    </integer-array>
+
+    <!-- January -->
+    <color name="gradient_1_top">#2C73D2</color>
+    <color name="gradient_1_bottom">#531b93</color>
+
+    <!-- February -->
+    <color name="gradient_2_top">#00b1a2</color>
+    <color name="gradient_2_bottom">#005493</color>
+
+    <!-- March -->
+    <color name="gradient_3_top">#9e426e</color>
+    <color name="gradient_3_bottom">#642B73</color>
+
+    <!-- April -->
+    <color name="gradient_4_top">#26bace</color>
+    <color name="gradient_4_bottom">#1A2980</color>
+
+    <!-- May -->
+    <color name="gradient_5_top">#531b93</color>
+    <color name="gradient_5_bottom">#4E6FC3</color>
+
+    <!-- June -->
+    <color name="gradient_6_top">#005493</color>
+    <color name="gradient_6_bottom">#009193</color>
+
+    <!-- July -->
+    <color name="gradient_7_top">#4389A2</color>
+    <color name="gradient_7_bottom">#5C258D</color>
+
+    <!-- August -->
+    <color name="gradient_8_top">#136a8a</color>
+    <color name="gradient_8_bottom">#2F4858</color>
+
+    <!-- September -->
+    <color name="gradient_9_top">#009051</color>
+    <color name="gradient_9_bottom">#006493</color>
+
+    <!-- October -->
+    <color name="gradient_10_top">#8017ff</color>
+    <color name="gradient_10_bottom">#011977</color>
+
+    <!-- November -->
+    <color name="gradient_11_top">#1caae0</color>
+    <color name="gradient_11_bottom">#005B4B</color>
+
+    <!-- December -->
+    <color name="gradient_12_top">#8f3764</color>
+    <color name="gradient_12_bottom">#1D2671</color>
+
+    <integer-array name="twelve_gradients">
+        <item>@drawable/gradient_1</item>
+        <item>@drawable/gradient_2</item>
+        <item>@drawable/gradient_3</item>
+        <item>@drawable/gradient_4</item>
+        <item>@drawable/gradient_5</item>
+        <item>@drawable/gradient_6</item>
+        <item>@drawable/gradient_7</item>
+        <item>@drawable/gradient_8</item>
+        <item>@drawable/gradient_9</item>
+        <item>@drawable/gradient_10</item>
+        <item>@drawable/gradient_11</item>
+        <item>@drawable/gradient_12</item>
+    </integer-array>
+
+</resources>

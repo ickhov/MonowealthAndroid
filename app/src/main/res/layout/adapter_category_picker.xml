@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CategoryPickerAdapter"
+    android:layout_weight="1.0"
+    android:id="@+id/adapter_category_picker"
+    android:clickable="true"
+    android:focusable="true">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2" />
+
+    <com.monowealth.monowealth.RegularButton
+        android:id="@+id/adapter_category_picker_submit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:layout_weight="0.6"
+        android:background="@color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/adapter_category_picker_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        app:srcCompat="@drawable/delete"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:contentDescription="@string/delete"/>
+
+</LinearLayout>

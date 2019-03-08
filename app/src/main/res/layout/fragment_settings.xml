@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:background="@color/charcoal"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.monowealth.monowealth.MediumTextView
+        android:id="@+id/fragment_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:text="@string/miscellaneous"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <com.monowealth.monowealth.RegularButton
+        android:id="@+id/fragment_settings_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="@string/feedback"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/modified_spindrift"/>
+
+    <com.monowealth.monowealth.RegularButton
+        android:id="@+id/fragment_settings_licenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="@string/third_party_licenses"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/modified_orchid"/>
+
+</LinearLayout>

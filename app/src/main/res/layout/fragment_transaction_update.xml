@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_transaction_update"
+    tools:context=".TransactionUpdateFragment"
+    android:background="@color/charcoal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.monowealth.monowealth.MediumTextView
+        android:id="@+id/fragment_transaction_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_transaction_update_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1.0"
+        app:layout_constraintTop_toBottomOf="@id/fragment_transaction_update_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.monowealth.monowealth.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="start"
+            android:text="@string/name" />
+
+        <com.monowealth.monowealth.MediumEditText
+            android:id="@+id/fragment_transaction_update_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:hint="@string/trans_name"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"/>
+
+        <com.monowealth.monowealth.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="start"
+            android:text="@string/amount" />
+
+        <com.monowealth.monowealth.MediumEditText
+            android:id="@+id/fragment_transaction_update_amount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:hint="@string/trans_amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"/>
+
+        <com.monowealth.monowealth.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="start"
+            android:text="@string/date" />
+
+        <com.monowealth.monowealth.MediumButton
+            android:id="@+id/fragment_transaction_update_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:text="@string/trans_date"
+            android:textColor="@color/white" />
+
+        <com.monowealth.monowealth.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="start"
+            android:text="@string/category" />
+
+        <com.monowealth.monowealth.MediumButton
+            android:id="@+id/fragment_transaction_update_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:text="@string/trans_category"
+            android:textColor="@color/white" />
+
+        <com.monowealth.monowealth.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="start"
+            android:text="@string/location" />
+
+        <com.monowealth.monowealth.MediumEditText
+            android:id="@+id/fragment_transaction_update_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:hint="@string/location_hint"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <com.monowealth.monowealth.RegularButtonRounded
+        android:id="@+id/fragment_transaction_update_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/fragment_transaction_update_linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fragment_transaction_update_delete"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <com.monowealth.monowealth.RegularButtonRounded
+        android:id="@+id/fragment_transaction_update_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/fragment_transaction_update_linear_layout"
+        app:layout_constraintEnd_toEndOf="@id/fragment_transaction_update_cancel"
+        app:layout_constraintStart_toEndOf="@id/fragment_transaction_update_save"/>
+
+    <com.monowealth.monowealth.RegularButtonRounded
+        android:id="@+id/fragment_transaction_update_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/fragment_transaction_update_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_transaction_update_delete"/>
+
+</android.support.constraint.ConstraintLayout>
